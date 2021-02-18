@@ -1,1 +1,1 @@
-web : gunicorn ttps.wsgi      
+web : gunicorn app:server   
