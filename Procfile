@@ -1,1 +1,1 @@
-web : gunicorn ttps.wsgi --log-file -   
+web: gunicorn core.wsgi --log-file=-
