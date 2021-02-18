@@ -26,7 +26,7 @@ SECRET_KEY = '(u!04(j4tr$*xgt5gx@)4royb_dr=b)*(%uuov*jz8zoi3-h3o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1','https://music-recomendation-system.herokuapp.com/'] #
+ALLOWED_HOSTS = ['localhost','127.0.0.1','https://music-recomendation-system.herokuapp.com/','https://songrecomendatiom.herokuapp.com/'] #
 
 
 # Application definition
@@ -131,8 +131,10 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'staticfile'),
 )
+
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
