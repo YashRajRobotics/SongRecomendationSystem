@@ -24,4 +24,4 @@ threadpoolctl==2.1.0
 urllib3==1.26.2
 whitenoise==5.2.0
 wincertstore==0.2
-python==3.7.1
+python==3.6.13
