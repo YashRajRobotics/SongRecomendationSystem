@@ -1,1 +1,1 @@
-web : gunicorn ttps.wsgi   
+web : gunicorn ttps.wsgi --log-file -   
