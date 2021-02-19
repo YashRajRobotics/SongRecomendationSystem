@@ -25,7 +25,7 @@ SECRET_KEY = '(u!04(j4tr$*xgt5gx@)4royb_dr=b)*(%uuov*jz8zoi3-h3o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['gaana-recomendation.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
