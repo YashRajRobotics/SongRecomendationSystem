@@ -25,8 +25,7 @@ SECRET_KEY = '(u!04(j4tr$*xgt5gx@)4royb_dr=b)*(%uuov*jz8zoi3-h3o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://gaana-recomendation.herokuapp.com/']
-
+ALLOWED_HOSTS = ['gaana-recomendation.herokuapp.com/']
 
 # Application definition
 
@@ -43,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')      
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')      
 
 YOUTUBE_DATA_API_KEY = 'AIzaSyA5NVvKDkwtjyDvGupEHbMqf-vH46o5VOg'
 
